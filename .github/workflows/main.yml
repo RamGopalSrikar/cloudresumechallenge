@@ -19,6 +19,6 @@ jobs:
         
     - name: updating cloudformation stack
       run: |
-        aws cloudformation create-stack --stack-name cloudresumechallenge --template-body file:///cloudformation/template.yaml --capabilities CAPABILITY_NAMED_IAM
+        aws cloudformation create-stack --stack-name cloudresumechallenge --template-body file://cloudresumechallenge/cloudformation/template.yaml --capabilities CAPABILITY_NAMED_IAM
         
    
